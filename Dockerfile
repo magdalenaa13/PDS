@@ -1,7 +1,7 @@
-FROM python:3
+FROM python:latest
 
 COPY app.py .
 
-RUN pip install flask
+WORKDIR /client/
 
 CMD [ "python", "app.py"]
